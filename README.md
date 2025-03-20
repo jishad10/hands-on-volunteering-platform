@@ -67,12 +67,7 @@ The goal is to create a **collaborative space** that encourages social participa
 - Mobile app for on-the-go access
 - Social media integration for event sharing
 
-## License
-- This project is open-source under the [MIT License](LICENSE).
+## Database Schema
+![Hands-On Volunteering](assets/images/diagram.png)
 
-## Contributing
-- We welcome contributions! Please **fork the repository**, make your changes, and submit a **pull request**.
-
-## Contact
-- For inquiries or collaboration opportunities, reach out via email at **support@volunteerplatform.com**
 
