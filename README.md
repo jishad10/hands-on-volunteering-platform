@@ -21,12 +21,10 @@ The goal is to create a **collaborative space** that encourages social participa
 - Node.js & Express.js
 - MongoDB (Mongoose ORM)
 - JWT (JSON Web Token) for secure authentication
-- Redux (if applicable) for state management
-- Axios for API calls
+- Redux for state management
 
 ### Other Tools
 - Cloudinary for media uploads
-- Nodemailer for email notifications
 
 ## Features
 
@@ -68,6 +66,7 @@ The goal is to create a **collaborative space** that encourages social participa
 - Social media integration for event sharing
 
 ## Database Schema
-![Hands-On Volunteering](assets/images/diagram.png)
+![Project Diagram](https://raw.githubusercontent.com/jishad10/hands-on-volunteering-platform/main/Hands-on%20project/assets/images/diagram.png)
+
 
 
