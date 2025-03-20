@@ -106,14 +106,6 @@ router.get("/users/:id/history", verifyJWT, getVolunteerHistory);
 router.get("/users/search", searchUsers);
 
 # event route
-import { Router } from "express";
-import { verifyJWT } from "../middlewares/auth.middleware.js";
-import { mongoIdPathVariableValidator } from "../validators/common/mongodb.validators.js";
-import { attendEvent, createEvent, deleteEvent, getAllEvents, getEventById, leaveEvent, searchEvents, updateEvent } from "../controllers/event.controller.js";
-import { createEventValidator, updateEventValidator } from "../validators/event.validators.js";
-
-
-const router = Router();
 
 router.route("/")
   .get(getAllEvents) 
@@ -132,11 +124,6 @@ router.route("/:eventId/leave").delete(verifyJWT, mongoIdPathVariableValidator("
 export default router;
 
 # help route
-import { Router } from "express";
-import { verifyJWT } from "../middlewares/auth.middleware.js";
-import { addComment, createHelpRequest, deleteHelpRequest, getAllHelpRequests, getHelpRequestById, joinHelpRequest, leaveHelpRequest, updateHelpRequest, updateHelpRequestStatus } from "../controllers/help.controller.js";
-
-const router = Router();
 
 router.get("/", getAllHelpRequests);
 
@@ -159,20 +146,6 @@ export default router;
 
 # volunteer route
 
-import { Router } from "express";
-import { verifyJWT  } from "../middlewares/auth.middleware.js";
-import { 
-  logVolunteerHours, 
-  getAllVolunteerLogs, 
-  getUserVolunteerLogs, 
-  getVolunteerLog, 
-  verifyVolunteerLog, 
-  getLeaderboard, 
-  getCertificates 
-} from "../controllers/volunteer.controller.js";
-
-const router = Router();
-
 router.post("/log", verifyJWT, logVolunteerHours);
 
 router.get("/logs", verifyJWT, getAllVolunteerLogs);
@@ -190,12 +163,6 @@ router.get("/certificates", verifyJWT, getCertificates);
 export default router;
 
 # team route
-
-import { Router } from "express";
-import { createTeam, deleteTeam, getAllTeams, getTeamById, joinTeam, leaveTeam, updateTeam, getUserTeams } from "../controllers/team.controller.js";
-import { verifyJWT } from "../middlewares/auth.middleware.js";
-
-const router = Router();
 
 router
     .post("/", verifyJWT, createTeam)
